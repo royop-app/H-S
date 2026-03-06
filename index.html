@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Portal</title>
-   <link rel="icon" href="./favcon.png" type="image/png">
-  <link rel="shortcut icon" href="./favcon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royop H&S Portal</title>
+  <link rel="icon" href="favicon.png">
   <style>
     * {
       box-sizing: border-box;
@@ -28,9 +27,22 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     }
 
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+
     h1 {
       text-align: center;
-      margin: 0 0 10px;
+      margin: 0;
       font-size: 32px;
     }
 
@@ -101,13 +113,24 @@
       .section h2 {
         font-size: 20px;
       }
+
+      .header {
+        flex-direction: column;
+      }
+
+      .logo {
+        height: 42px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Project Portal</h1>
-  
+    <div class="header">
+      <img src="logo.png" alt="Royop Logo" class="logo">
+      <h1>Royop H&S Portal</h1>
+    </div>
+
     <p class="subtitle">Select a project below to open its form or website.</p>
 
     <div class="section">
@@ -156,5 +179,3 @@
   </div>
 </body>
 </html>
-
-
